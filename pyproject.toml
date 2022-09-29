@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "github-graphql"
+version = "0.1.0"
+description = ""
+authors = ["Chuck Meyer <chuck.meyer@algolia.com>"]
+readme = "README.md"
+packages = [{include = "github_graphql"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+algoliasearch = "^2.6.2"
+python-dotenv = "^0.21.0"
+flatten-json = "^0.1.13"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+black = "^22.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
